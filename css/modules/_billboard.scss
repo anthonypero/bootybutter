@@ -1,0 +1,83 @@
+.bg-background {
+    position: absolute; 
+    top: 0;
+    left: -50px;
+    width: calc(100vw + 100px);
+    height: calc(100vh - 78px);
+    background-image: url('../images/baby-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: bgSlide;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-delay: .5s;
+    filter: blur(3px);
+}
+
+.bg-foreground {
+    position: absolute;
+    width: 100vw;
+    height: 37vh;
+    bottom: 0;
+    left: -51vw;
+    background-image: url('../images/bbtable.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fgSlide;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-delay: .5s;
+}
+
+.billboard {
+
+    backface-visibility: hidden;
+
+    .cta{
+        position: absolute;
+        top: 33%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        width: 33vw;
+        text-align: center;
+        backface-visibility: hidden;
+        animation-name: dissolveFromWhite;
+        animation-delay: .5s;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+
+    }
+
+    .headline {
+        font-weight: 800;
+        font-size: 4vw;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 1;
+
+        .highlight {
+            color: $orange;
+        }
+
+        .disclaimer-mark {
+            font-size: .5em;
+            position: relative; 
+            top: -1.5vw;
+        }
+    }
+
+    .btn {
+        margin-top: 2vw;
+        font-size: 1.2vw;
+    }
+
+    .disclaimer {
+        font-size: .8em;
+        font-style: italic;
+        margin-top: 1vw;
+    }
+}

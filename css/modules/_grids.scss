@@ -1,0 +1,54 @@
+.all-natural {
+    .grid__text {
+        background-color: $lavender;
+    }
+
+    .grid__image {
+        background-image: url('../images/all-natural.jpg'); 
+    }
+}
+
+.cloth-diaper-safe {
+    .grid__text {
+        background-color: $peach;
+    }
+    .grid__image {
+        background-image: url('../images/cloth-diaper.jpg'); 
+    }
+}
+
+.soothes-irritation {
+    .grid__text {
+        background-color: $mint;
+    }
+    .grid__image {
+        background-image: url('../images/soothes-irritation.jpg'); 
+    }
+}
+
+.grid {
+
+    &__text {
+
+        &--title {
+            font-style: italic;
+            font-size: 3.3vw;
+        }
+
+        &--body {
+            font-size: 1.5vw;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .btn {
+            font-size: 1.2vw;
+        }
+    }
+
+    &__image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

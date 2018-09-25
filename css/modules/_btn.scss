@@ -1,0 +1,28 @@
+.btn {
+    border: 1px solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 50px;
+    display: inline-block;
+    color: currentColor;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,.1));
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0,0,0,0) 60%, rgba(0,0,0,.1));
+        cursor: pointer;
+    }
+
+    &--orange {
+        background: linear-gradient(180deg, $orange 60%, darken($orange, 10%));
+        color: white;
+        border-color: $black;
+
+        &:hover {
+            background: linear-gradient(0deg, $orange 60%, darken($orange, 10%));
+        }
+    }
+
+
+}

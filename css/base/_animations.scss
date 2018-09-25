@@ -1,0 +1,48 @@
+@keyframes bgSlide {
+    0%   {
+        left: -100px;
+        filter: blur(0);
+    }
+
+    50%  {
+        filter: blur(1px);
+    }
+
+    100%  {
+        left: -50px;
+        filter: blur(3px);
+    }
+}
+
+@keyframes fgSlide {
+    0%   {
+        left: -60vw;
+        filter: blur(3px);
+    }
+
+    50%  {
+        filter: blur(2px);
+    }
+
+    100%  {
+        left: -51vw;
+        filter: blur(0);
+    }
+}
+
+@keyframes dissolveFromWhite {
+
+    0% {
+        filter:blur(25px);
+        opacity: 0;
+        color: white;
+    }
+
+    100% {
+        filter:blur(0);
+        opacity: 1;
+        color: inherit;
+    }
+
+
+}
